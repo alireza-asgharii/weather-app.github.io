@@ -75,6 +75,7 @@ function weatherHandler() {
      
       div.innerHTML = markup;
       listWeather.appendChild(div);
+      err.innerHTML = ''
     })
     .catch(() => {
       err.innerHTML = 'مشکلی وجود دارد'
