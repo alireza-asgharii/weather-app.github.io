@@ -7,6 +7,14 @@ const err =  document.querySelector('.err');
 
 const key = "67f613e2aea22e56d6dc6da64d245ea6";
 
+input.addEventListener('focus', () => {
+  input.placeholder = '';
+})
+
+input.addEventListener('blur', () => {
+  input.placeholder = 'search for city weather...';
+})
+
 button.addEventListener("click", () => {
   weatherHandler();
 });
