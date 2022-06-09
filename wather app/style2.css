@@ -1,0 +1,161 @@
+:root {
+  --gColor: #5463FF;
+  --gColor2: #ECECEC
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  /* background: linear-gradient(to right, var(--gColor), var(--gColor2)); */
+  /* background: #333;
+  color: #fff; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  padding: 100px 0 30px;
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
+
+.searchInput {
+  border: 1px solid rgba(51, 51, 51, 0.301);
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 300px;
+  outline: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+.searchButton {
+  border-radius: 7px;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  font-size: 1rem;
+  padding: 10px;
+  line-height: 18px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px 13px;
+  margin: 10px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.126), 
+  0 8px 16px rgba(0, 0, 0, 0.164);
+}
+
+.clear {
+  background: linear-gradient(to right, #FFD93D 60%, #FF6B6B);
+  color: #333;
+}
+
+.clouds {
+  background: linear-gradient(to right, #7900FF 60%, #77a1f4);
+}
+
+.defualt {
+  background: linear-gradient(to right, #14C38E 60%, #00FFAB);
+}
+
+.weatherList {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+
+}
+
+.temp p {
+  padding: 5px 5px 0;
+}
+
+.temp h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  position: relative;
+  top: -4px;
+}
+
+.temp h3 sup {
+  position: relative;
+  left: 1px;
+  font-weight: 100;
+}
+
+.temp {
+  margin-left: 5px;
+}
+
+.city .point {
+  font-size: 2.4rem;
+  font-weight: 100;
+  position: relative;
+  right: 5px;
+  top: 8px;
+}
+
+.dateContainer {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.cityName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.city i {
+  margin-right: 4px;
+}
+
+
+
+
+.fa-location-dot {
+  font-size: .7rem;
+}
+
+.imageWeather {
+  position: relative;
+  left: 10px;
+  top: -8px;
+  opacity: .8;
+}
+
+.err {
+  padding: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .city {
+    width: 500px;
+  }
+}
+
+
