@@ -166,6 +166,16 @@ body {
   padding: 20px;
 }
 
+.myName {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #774af16f;
+  font-size: 1.2rem;
+}
+
+
 @media screen and (min-width: 500px) {
   .city {
     width: 500px;
