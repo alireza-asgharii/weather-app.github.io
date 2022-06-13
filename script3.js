@@ -7,13 +7,13 @@ const err =  document.querySelector('.err');
 
 const key = "67f613e2aea22e56d6dc6da64d245ea6";
 
-input.addEventListener('focus', () => {
-  input.placeholder = '';
-})
+// input.addEventListener('focus', () => {
+//   input.placeholder = '';
+// })
 
-input.addEventListener('blur', () => {
-  input.placeholder = 'search for city weather...';
-})
+// input.addEventListener('blur', () => {
+//   input.placeholder = 'search for city weather...';
+// })
 
 button.addEventListener("click", () => {
   weatherHandler();
@@ -74,11 +74,12 @@ function weatherHandler() {
       `;
      
       div.innerHTML = markup;
+      div.classList.add('cityShow');
       listWeather.appendChild(div);
       err.innerHTML = ''
     })
     .catch(() => {
-      err.innerHTML = 'مشکلی وجود دارد'
+      err.innerHTML = 'Please enter the name of the city'
     })
 
   input.value = "";

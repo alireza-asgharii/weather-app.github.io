@@ -62,8 +62,22 @@ body {
   width: 90%;
   padding: 10px 13px;
   margin: 10px 0;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.126), 
-  0 8px 16px rgba(0, 0, 0, 0.164);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.073), 
+  0 8px 16px rgba(0, 0, 0, 0.123);
+  transition: all ease .3s;
+}
+
+.cityShow {
+  animation: cityShow ease .4s forwards;
+}
+
+@keyframes cityShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .clear {
