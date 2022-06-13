@@ -167,10 +167,6 @@ body {
 }
 
 .myName {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #774af16f;
   font-size: 1.2rem;
 }
