@@ -176,7 +176,9 @@ body {
   .city {
     width: 500px;
   }
+}
 
+@media screen and (max-width: 600px) {
   .searchButton {
     cursor: default;
   }
