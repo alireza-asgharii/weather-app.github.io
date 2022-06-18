@@ -15,9 +15,7 @@ const key = "67f613e2aea22e56d6dc6da64d245ea6";
 //   input.placeholder = 'search for city weather...';
 // })
 
-button.addEventListener("click", () => {
-  weatherHandler();
-});
+button.addEventListener("click", weatherHandler);
 
 window.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
@@ -41,7 +39,7 @@ function weatherHandler() {
       const d = new Date();
       const day = days[d.getDay()];
       const month = months[d.getMonth()];
-      const monthDay = d.getDate()
+      const monthDay = d.getDate();
 
       const { main, name, sys, weather, message } = data;
 
@@ -76,7 +74,7 @@ function weatherHandler() {
       div.innerHTML = markup;
       div.classList.add('cityShow');
       listWeather.appendChild(div);
-      err.innerHTML = ''
+      err.innerHTML = '';
     })
     .catch(() => {
       err.innerHTML = 'Please enter the name of the city'
